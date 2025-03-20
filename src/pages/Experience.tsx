@@ -2,6 +2,11 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import CompanyCam from '../components/CompanyCam';
+import Kiewit from '../components/Kiewit';
+import MutualOfOmaha from '../components/MutualOfOmaha';
+import Leidos from '../components/Leidos';
+import UNL from '../components/UNL';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -53,23 +58,23 @@ export default function Experience() {
       </Box>
 
       <CustomTabPanel value={value} index={0}>
-        UNL
+        <UNL/>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={1}>
-        Leidos
+        <Leidos/>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
-        Mutual of Omaha
+        <MutualOfOmaha/>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={3}>
-        CompanyCam
+        <CompanyCam/>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={4}>
-        Kiewit
+        <Kiewit/>
       </CustomTabPanel>
 
     </div>
